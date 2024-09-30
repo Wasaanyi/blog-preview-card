@@ -78,7 +78,8 @@ body {
 .card {
     background-color: #fff;
     padding: 24px;
-    width: 380px;
+    width: 384px;
+    height: 522px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
