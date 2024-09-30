@@ -1,0 +1,184 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    background-color: #f4d04e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    padding: 24px;
+    width: 380px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-img img {
+    width: 100%;
+    /* height: 200px; */
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: "Figtree", sans-serif;
+}
+
+.category {
+    background-color: #f4d04e;
+    width: 82px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: #111;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.publish-date {
+    color: #111;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+
+.title {
+    color: #111;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #686868;
+}
+
+.author {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+}
+
+.author p {
+    color: #111;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+    }
+
+    .category {
+        width: 73px;
+        font-size: 12px;
+    }
+
+    .publish-date {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .title:hover {
+        color: #f4d04e;
+        cursor: pointer;
+    }
+}
