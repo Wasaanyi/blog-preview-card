@@ -102,7 +102,7 @@ body {
 
 .category {
     background-color: #f4d04e;
-    width: 82px;
+    width: fit-content;
     padding: 4px 12px;
     border-radius: 4px;
     color: #111;
